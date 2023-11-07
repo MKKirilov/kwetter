@@ -1,0 +1,10 @@
+stages:
+    - test
+    - build
+
+build:
+    stage: build
+    script:
+        - yarn install
+        - yarn build
+        - echo "Build successful."
