@@ -25,16 +25,16 @@ jobs:
 
         
     - name: Install dependencies
-      run:  cd kwetter-twitter-clone
-        npm install
+      working-directory: ./kwetter-twitter-clone
+      run: npm install
 
     - name: Build
-      run: cd kwetter-twitter-clone
-       npm run build
+      working-directory: ./kwetter-twitter-clone
+      run: npm run build
 
     - name: Test
-      run: cd kwetter-twitter-clone
-        npm test
+      working-directory: ./kwetter-twitter-clone
+      run: npm test
 
     - name: Deploy
       run: |
