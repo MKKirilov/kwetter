@@ -24,15 +24,17 @@ jobs:
         node-version: 14
 
         
-
     - name: Install dependencies
-      run: npm install
+      run:  cd kwetter-twitter-clone
+        npm install
 
     - name: Build
-      run: npm run build
+      run: cd kwetter-twitter-clone
+       npm run build
 
     - name: Test
-      run: npm test
+      run: cd kwetter-twitter-clone
+        npm test
 
     - name: Deploy
       run: |
