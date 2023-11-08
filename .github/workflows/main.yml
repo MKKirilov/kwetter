@@ -32,6 +32,10 @@ jobs:
       working-directory: ./kwetter-twitter-clone
       run: npm run build
 
+    - name: Test
+      working-directory: ./kwetter-twitter-clone
+      run: npm test
+
     - name: Deploy
       run: |
         # Add your deployment commands here
