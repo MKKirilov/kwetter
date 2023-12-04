@@ -1,5 +1,6 @@
 import LeftSideBar from "@/components/LeftSideBar"
 import MainComponent from "@/components/MainComponent"
+import RightSideBar from "@/components/RightSideBar"
 
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
         {/* left sidebar for navigation/header */}
         <LeftSideBar/>
         <MainComponent/>
-        {/* <section>right section</section>  */}
+        <RightSideBar/>
       </div>
     </div>
   )
